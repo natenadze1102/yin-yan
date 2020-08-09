@@ -1,0 +1,425 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+height:100vh;
+    background: linear-gradient(to bottom, rgba(193,191,234,1) 0%, rgba(206,199,236,1) 49%,
+                                 rgba(216,208,239,1) 50%, rgba(235,233,249,1) 100%);
+}
+html {
+    font-size: 62.5%;
+}
+
+#myVideo {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.big-circle {
+    background-color: #fff;
+    position: absolute;
+    left:30%;
+    top:12%;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 100%;
+    border:3px solid rgba(0, 0, 255, 0.245);
+    box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.85);
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-duration: 2s;
+
+    .circleOne {
+        position: absolute;
+        left: -13%;
+        top:35%;
+        width:15rem;
+        height:15rem;
+        border-radius: 50%;
+        box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
+        transition: .2s ease-in-out;
+        border:3px solid rgb(47, 255, 255);
+        .oil {
+            height: 30%;
+           position: absolute;
+            position: absolute;
+            top:40%;
+            left:34%;
+            border-radius: 25%;
+        }
+    
+        &:hover {
+            border-radius: 95px 86px 86px 86px;
+            width:20rem;
+            height: 10rem;
+           
+            .oil {
+                height:35%;
+                animation-name: env-travel;
+                animation-duration: 1.5s;
+                animation-delay: .1s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+            }
+        }
+    }
+
+    .circleTwo {
+        position: absolute;
+        left:34%;
+        top:-13%;
+        width:15rem;
+        height:15rem;
+        border-radius: 50%;
+        box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
+        transition: .2s ease-in-out;
+        border:3px solid rgb(47, 255, 255);
+        .oil {
+           /*  height: 20%; */
+           position: absolute;
+           font-size: 330%;
+            position: absolute;
+            top:40%;
+            left:38%;
+            border-radius: 25%;
+        }
+    
+        .auto-next {
+            height: 20%;
+            position: absolute;
+            top:35%;
+            transform: rotateY(180deg);
+            right: 1rem;
+            opacity: 0;
+           transition-delay: 2s;
+        }
+        &:hover {
+            border-radius: 95px 86px 86px 86px;
+            width:20rem;
+            height: 10rem;
+            
+           
+            .oil {
+                height:35%;
+                animation-name: travel;
+                animation-duration: 1.5s;
+                animation-delay: .1s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 10;
+            }
+            .auto-next {
+               
+                animation-name: travelTwo;
+                animation-duration: .5s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards; 
+            }
+    
+        }
+    }
+
+    .circleThree {
+        position: absolute;
+        right: -13%;
+        top:35%;
+        width:15rem;
+        height:15rem;
+        transition: .2s ease-in-out;
+        border-radius: 50%;
+        box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
+        border:3px solid rgb(47, 255, 255);
+        
+        .hand {
+            height: 40%;
+            position: absolute;
+            top:40%;
+            left:33%;
+        }
+
+        .heart {
+            height: 45%;
+            position: absolute;
+            top:35%;
+            left:29%;
+            opacity: 1;
+            transition-delay: 2s;
+        }
+        &:hover {
+            border-radius: 95px 86px 86px 86px;
+            width:20rem;
+            height: 10rem;
+           
+            .hand {
+                animation-name: hand;
+                animation-duration: 1.5s;
+                animation-delay: .1s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+            .heart {
+                animation-name: heart;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards; 
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+
+    .circleFour {
+        position: absolute;
+        left:34%;
+        bottom:-13%;
+        width:15rem;
+        height:15rem;
+        box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
+        border-radius: 50%;
+        transition: .2s ease-in-out;
+        border:3px solid rgb(47, 255, 255);
+
+        .idea {
+            height: 50%;
+            position: absolute;
+            top:25%;
+            left:27%;
+            border-radius: 0;
+            z-index: 1;
+        }
+
+        .idea-light {
+            height: 50%;
+            position: absolute;
+            position: absolute;
+            top:25%;
+            left:27%;
+            border-radius: 0;
+         }
+    
+        &:hover {
+            border-radius: 95px 86px 86px 86px;
+            width:20rem;
+            height: 10rem;
+           
+            .idea{
+                left: 33%;
+                height:60%;
+                transform: scale(1.3);
+                animation-name: idea;
+                animation-duration: 1.5s;
+                animation-delay: .1s;
+                animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                animation-fill-mode: forwards;
+                animation-iteration-count: 10;
+            }
+
+            .idea-light{
+                left: 33%;
+                height:60%;
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    .circleFive {
+        position: absolute;
+        left:34%;
+        top:35%;
+        width:15rem;
+        height:15rem;
+        background-image: linear-gradient(to right top, #d17cac, #ab8acd, #7199db, #2aa4d2, #00a9b7, #20b0b0, #3bb6a8, #54bc9f, #57ccb2, #59dbc6, #5cebdb, #5ffbf1);
+        box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
+        border-radius: 50%;
+        transition: .2s ease-in-out;
+        border:3px solid rgb(47, 255, 255);
+        
+        .yinYang {
+            height: 100%;
+            position: absolute;
+            border-radius: 25%;
+        }
+    
+        &:hover {
+            border-radius: 95px 86px 86px 86px;
+            width:20rem;
+            height: 10rem;
+           
+            .yinYang {
+                animation-name: yinYang;
+                animation-duration: 1.5s;
+                animation-delay: .1s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 10;
+            }
+    
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 40rem;
+        height: 40rem;
+    }
+    
+}
+
+
+@keyframes env-travel {
+    0% {
+        left:0;
+        height: 10%;
+    }
+
+
+    50% {
+        left:42%;
+        top:33%;
+    }
+
+    75% {
+       top:0;
+    }
+
+    100% {
+        transform: rotate(720deg);
+        height: 60%;
+        top:20%;
+    }
+}
+
+@keyframes hand {
+    0% {
+        height:55%;
+    }
+
+    100% {
+        height: 55%;
+    }
+}
+
+@keyframes heart {
+    0% {
+        height: 60%;
+        left:33%;
+        transform: scale(1.2);
+    }
+
+    20% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        top:0;
+    }
+
+    80% {
+        top:35%;
+    }
+    100% {
+        height:60%;
+        left:33%;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes yinYang {
+    0% {
+        transform: rotate(-360deg);
+        left:0;
+    }
+
+    50% {
+        left:50%;
+    }
+
+    100% {
+        left:0;
+    }
+}
+
+@keyframes idea {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    70% {
+        
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes travel {
+    
+    0% {
+      /*   top:0%;
+        left:0%; */
+    }
+    50% {
+        transform: rotateY(180deg); 
+        left:10%;
+        color:yellow;
+       
+    }
+
+    100% {
+        transform: rotateX(180deg);
+        color:red;
+    }
+}
+
+@keyframes travelTwo {
+    0% {
+        left:150%;
+        opacity: 0;
+        
+    }
+
+    25% {
+       
+    }
+
+   50% {
+    
+   }
+
+   60% {
+    opacity: 0;
+   }
+
+    100% {
+        left:60%;
+        opacity: 1;
+        height:55%;
+        top:20%;
+    }
+}
+
+@keyframes bounce-7 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
