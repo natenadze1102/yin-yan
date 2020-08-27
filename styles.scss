@@ -95,13 +95,20 @@ html {
         transition: .2s ease-in-out;
         border:3px solid rgb(47, 255, 255);
         .oil {
-           /*  height: 20%; */
            position: absolute;
-           font-size: 330%;
+           
             position: absolute;
             top:40%;
             left:38%;
             border-radius: 25%;
+
+            i {
+                font-size: 330%;
+
+                @media only screen and (max-width:500px) {
+                    font-size: 220%;
+                }
+            }
         }
     
         .auto-next {

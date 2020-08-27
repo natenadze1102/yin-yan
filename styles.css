@@ -124,13 +124,21 @@ html {
 }
 
 .big-circle .circleTwo .oil {
-  /*  height: 20%; */
   position: absolute;
-  font-size: 330%;
   position: absolute;
   top: 40%;
   left: 38%;
   border-radius: 25%;
+}
+
+.big-circle .circleTwo .oil i {
+  font-size: 330%;
+}
+
+@media only screen and (max-width: 500px) {
+  .big-circle .circleTwo .oil i {
+    font-size: 220%;
+  }
 }
 
 .big-circle .circleTwo .auto-next {
