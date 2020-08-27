@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body {
-    height:100vh;
     background: linear-gradient(to bottom, rgba(193,191,234,1) 0%, rgba(206,199,236,1) 49%,
                                  rgba(216,208,239,1) 50%, rgba(235,233,249,1) 100%);
 }
@@ -12,24 +11,25 @@ html {
     font-size: 62.5%;
 }
 
+.container {
+
+    margin:0 auto;
+}
+
 #myVideo {
-    position: absolute; 
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto; 
-    height: auto; 
-    z-index: -100;
-    background-size: cover;
-    overflow: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
 
 .big-circle {
     background-color: #fff;
-    position: absolute;
-    left:35%;
-    top:25%;
+    position: fixed;
+    left:40%;
+  
+    top:12%!important;
     height: 50rem;
     width: 50rem;
     border-radius: 100%;
@@ -38,13 +38,21 @@ html {
     animation-name: bounce-7;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
     animation-duration: 2s;
+    max-width:100%!important;
+
+    @media only screen and (max-width:1500px) {
+        left:35%;
+    }
+    @media only screen and (max-width:1200px) {
+        left:30%;
+    }
 
     .circleOne {
         position: absolute;
         left: -13%;
         top:35%;
-        width:15rem;
-        height:15rem;
+        width:30%;
+        height:30%;
         border-radius: 50%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         transition: .2s ease-in-out;
@@ -79,8 +87,8 @@ html {
         position: absolute;
         left:34%;
         top:-13%;
-        width:15rem;
-        height:15rem;
+        width:30%;
+        height:30%;
         border-radius: 50%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         transition: .2s ease-in-out;
@@ -134,8 +142,8 @@ html {
         position: absolute;
         right: -13%;
         top:35%;
-        width:15rem;
-        height:15rem;
+        width:30%;
+        height:30%;
         transition: .2s ease-in-out;
         border-radius: 50%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
@@ -183,8 +191,8 @@ html {
         position: absolute;
         left:34%;
         bottom:-13%;
-        width:15rem;
-        height:15rem;
+        width:30%;
+        height:30%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         border-radius: 50%;
         transition: .2s ease-in-out;
@@ -237,8 +245,8 @@ html {
         position: absolute;
         left:34%;
         top:35%;
-        width:15rem;
-        height:15rem;
+        width:30%;
+        height:30%;
         background-image: linear-gradient(to right top, #d17cac, #ab8acd, #7199db, #2aa4d2, #00a9b7, #20b0b0, #3bb6a8, #54bc9f, #57ccb2, #59dbc6, #5cebdb, #5ffbf1);
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         border-radius: 50%;
@@ -271,6 +279,17 @@ html {
     @media screen and (max-width: 992px) {
         width: 40rem;
         height: 40rem;
+    }
+    @media screen and (max-width: 768px) {
+        width: 30rem;
+        height: 30rem;
+        top:30%!important;
+    }
+    @media screen and (max-width: 468px) {
+        width: 25rem;
+        height: 25rem;
+        top:30%!important;
+        left:20%
     }
     
 }
