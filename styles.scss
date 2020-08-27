@@ -42,7 +42,7 @@ html {
     max-width:100%!important;
 
     @media only screen and (max-width:1500px) {
-        left:35%;
+        left:33%;
     }
     @media only screen and (max-width:1200px) {
         left:30%;
@@ -95,8 +95,6 @@ html {
         transition: .2s ease-in-out;
         border:3px solid rgb(47, 255, 255);
         .oil {
-           position: absolute;
-           
             position: absolute;
             top:40%;
             left:38%;
@@ -105,8 +103,8 @@ html {
             i {
                 font-size: 330%;
 
-                @media only screen and (max-width:500px) {
-                    font-size: 220%;
+                @media only screen and (max-width:748px) {
+                    font-size: 230%;
                 }
             }
         }

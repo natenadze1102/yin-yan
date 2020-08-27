@@ -54,7 +54,7 @@ html {
 
 @media only screen and (max-width: 1500px) {
   .big-circle {
-    left: 35%;
+    left: 33%;
   }
 }
 
@@ -125,7 +125,6 @@ html {
 
 .big-circle .circleTwo .oil {
   position: absolute;
-  position: absolute;
   top: 40%;
   left: 38%;
   border-radius: 25%;
@@ -135,9 +134,9 @@ html {
   font-size: 330%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 748px) {
   .big-circle .circleTwo .oil i {
-    font-size: 220%;
+    font-size: 230%;
   }
 }
 
