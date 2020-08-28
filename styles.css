@@ -36,13 +36,13 @@ html {
   background-color: #fff;
   position: fixed;
   left: 40%;
-  top: 12% !important;
-  height: 50rem;
-  width: 50rem;
+  top: 20% !important;
+  height: 40rem;
+  width: 40rem;
   border-radius: 100%;
   border: 3px solid rgba(0, 0, 255, 0.245);
-  -webkit-box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.85);
-          box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.85);
+          box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.85);
   -webkit-animation-name: bounce-7;
           animation-name: bounce-7;
   -webkit-animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
@@ -76,6 +76,18 @@ html {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border: 3px solid #2fffff;
+  -webkit-animation-name: appearFirst;
+          animation-name: appearFirst;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .big-circle .circleOne .oil {
@@ -121,6 +133,18 @@ html {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border: 3px solid #2fffff;
+  -webkit-animation-name: appearSecond;
+          animation-name: appearSecond;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .big-circle .circleTwo .oil {
@@ -197,6 +221,18 @@ html {
   -webkit-box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
   border: 3px solid #2fffff;
+  -webkit-animation-name: appearThird;
+          animation-name: appearThird;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .big-circle .circleThree .hand {
@@ -262,6 +298,18 @@ html {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border: 3px solid #2fffff;
+  -webkit-animation-name: appearFourth;
+          animation-name: appearFourth;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .big-circle .circleFour .idea {
@@ -328,6 +376,18 @@ html {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border: 3px solid #2fffff;
+  -webkit-animation-name: appearFifth;
+          animation-name: appearFifth;
+  -webkit-animation-duration: 1.1s;
+          animation-duration: 1.1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .big-circle .circleFive .yinYang {
@@ -359,8 +419,8 @@ html {
 
 @media screen and (max-width: 992px) {
   .big-circle {
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
   }
 }
 
@@ -633,63 +693,135 @@ html {
 
 @-webkit-keyframes bounce-7 {
   0% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
   }
   10% {
-    -webkit-transform: scale(1.1, 0.9) translateY(0);
-            transform: scale(1.1, 0.9) translateY(0);
+    -webkit-transform: scale(0) translateY(0);
+            transform: scale(0) translateY(0);
   }
   30% {
-    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
-            transform: scale(0.9, 1.1) translateY(-100px);
   }
   50% {
-    -webkit-transform: scale(1.05, 0.95) translateY(0);
-            transform: scale(1.05, 0.95) translateY(0);
+    -webkit-transform: scale(1.05, 0.95) translateY(-600px);
+            transform: scale(1.05, 0.95) translateY(-600px);
   }
   57% {
-    -webkit-transform: scale(1, 1) translateY(-7px);
-            transform: scale(1, 1) translateY(-7px);
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
   }
   64% {
     -webkit-transform: scale(1, 1) translateY(0);
             transform: scale(1, 1) translateY(0);
   }
   100% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    -webkit-transform: scale(1, 1) translateY(0) rotate(360deg);
+            transform: scale(1, 1) translateY(0) rotate(360deg);
   }
 }
 
 @keyframes bounce-7 {
   0% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
   }
   10% {
-    -webkit-transform: scale(1.1, 0.9) translateY(0);
-            transform: scale(1.1, 0.9) translateY(0);
+    -webkit-transform: scale(0) translateY(0);
+            transform: scale(0) translateY(0);
   }
   30% {
-    -webkit-transform: scale(0.9, 1.1) translateY(-100px);
-            transform: scale(0.9, 1.1) translateY(-100px);
   }
   50% {
-    -webkit-transform: scale(1.05, 0.95) translateY(0);
-            transform: scale(1.05, 0.95) translateY(0);
+    -webkit-transform: scale(1.05, 0.95) translateY(-600px);
+            transform: scale(1.05, 0.95) translateY(-600px);
   }
   57% {
-    -webkit-transform: scale(1, 1) translateY(-7px);
-            transform: scale(1, 1) translateY(-7px);
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
   }
   64% {
     -webkit-transform: scale(1, 1) translateY(0);
             transform: scale(1, 1) translateY(0);
   }
   100% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    -webkit-transform: scale(1, 1) translateY(0) rotate(360deg);
+            transform: scale(1, 1) translateY(0) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes appearFirst {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    left: -100rem;
+  }
+}
+
+@keyframes appearFirst {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    left: -100rem;
+  }
+}
+
+@-webkit-keyframes appearSecond {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    top: -100rem;
+  }
+}
+
+@keyframes appearSecond {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    top: -100rem;
+  }
+}
+
+@-webkit-keyframes appearThird {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    right: -100rem;
+  }
+}
+
+@keyframes appearThird {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    right: -100rem;
+  }
+}
+
+@-webkit-keyframes appearFourth {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    bottom: -100rem;
+  }
+}
+
+@keyframes appearFourth {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  80% {
+    bottom: -100rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
