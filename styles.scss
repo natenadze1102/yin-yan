@@ -49,6 +49,28 @@ html {
     @media only screen and (max-width:1200px) {
         left:30%;
     }
+    @media screen and (max-width: 992px) {
+        width: 35rem;
+        height: 35rem;
+    }
+    @media screen and (max-width: 768px) {
+        width: 30rem;
+        height: 30rem;
+        top:30%!important;
+        left:30%;
+    }
+    @media screen and (max-width: 468px) {
+        width: 25rem;
+        height: 25rem;
+        top:30%!important;
+        left:21%;
+    }
+    @media screen and (max-width: 350px) {
+        width: 20rem;
+        height: 20rem;
+        top:30%!important;
+        left:20%;
+    }
 
     .circleOne {
         position: absolute;
@@ -311,29 +333,6 @@ html {
             }
     
         }
-    }
-
-    @media screen and (max-width: 992px) {
-        width: 35rem;
-        height: 35rem;
-    }
-    @media screen and (max-width: 768px) {
-        width: 30rem;
-        height: 30rem;
-        top:30%!important;
-        left:30%;
-    }
-    @media screen and (max-width: 468px) {
-        width: 25rem;
-        height: 25rem;
-        top:30%!important;
-        left:21%;
-    }
-    @media screen and (max-width: 350px) {
-        width: 20rem;
-        height: 20rem;
-        top:30%!important;
-        left:15%;
     }
 }
 

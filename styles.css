@@ -70,6 +70,40 @@ html {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .big-circle {
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .big-circle {
+    width: 30rem;
+    height: 30rem;
+    top: 30% !important;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .big-circle {
+    width: 25rem;
+    height: 25rem;
+    top: 30% !important;
+    left: 21%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .big-circle {
+    width: 20rem;
+    height: 20rem;
+    top: 30% !important;
+    left: 20%;
+  }
+}
+
 .big-circle .circleOne {
   position: absolute;
   left: -13%;
@@ -421,40 +455,6 @@ html {
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 10;
           animation-iteration-count: 10;
-}
-
-@media screen and (max-width: 992px) {
-  .big-circle {
-    width: 35rem;
-    height: 35rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .big-circle {
-    width: 30rem;
-    height: 30rem;
-    top: 30% !important;
-    left: 30%;
-  }
-}
-
-@media screen and (max-width: 468px) {
-  .big-circle {
-    width: 25rem;
-    height: 25rem;
-    top: 30% !important;
-    left: 21%;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .big-circle {
-    width: 20rem;
-    height: 20rem;
-    top: 30% !important;
-    left: 15%;
-  }
 }
 
 @-webkit-keyframes env-travel {
