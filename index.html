@@ -4,42 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0effa952e0.js" crossorigin="anonymous"></script> 
     <title>My Intro Natenadze Version</title>
 </head>
 <body>
+    <nav>
+        <button onclick="myFunction()">CHANGE PLACE</button>
+    </nav>
     <div class="container">
-        <video autoplay muted loop id="myVideo">
-            <source src="./video/Pexels Videos 3723.mp4" type="video/mp4" media="screen and (max-device-width:1200px)">
-            <source src="./video/Pexels Videos 3723.ogg" type="video/ogg" media="screen and (max-device-width:700px)">
-            <source src="./video/Pexels Videos 3723.webm" type="video/webm" media="screen and (max-device-width:400px)">
+        <video autoplay muted loop id="myVideo-n">
+            <source src="./video/Pexels Videos 3723.mp4" type="video/mp4" media="screen and (max-device-width:1200px)">    
         </video>
-        <div class="big-circle">
-            <div class="circleOne">
-                <img class="oil" src="./pictures/mail.svg" alt="Convert">
-            </div>
-    
-            <div class="circleTwo">
-                <a class="oil">
-                    <i class="fas fa-gas-pump"></i>
-                </a>
-                <img class="auto-next" src="./pictures/2.png" alt="">
-            </div>
-    
-            <div class="circleThree">
-                <img class="hand " src="./pictures/bext/hand.svg" alt="">
-                <img class="heart" src="./pictures/bext/heart1.svg" alt="">
-            </div>
-    
-            <div class="circleFour">
-                <img class="idea" src="./pictures/idea.png" alt="">
-                <img class="idea-light" src="./pictures/idea-light.svg" alt="">
-            </div>
-    
-            <div class="circleFive">
-                <img class="yinYang fa-spin" src="./pictures/bext/chinese.svg" alt="">
+        <video autoplay muted loop id="myVideo-b" style="display: none;">
+           <source src="./video/bird.mp4">
+        </video>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="big-circle">
+                    <div class="circleOne">
+                        <img class="oil" src="./pictures/mail.svg" alt="Convert">
+                    </div>
+            
+                    <div class="circleTwo">
+                        <a class="oil">
+                            <i class="fas fa-gas-pump"></i>
+                        </a>
+                        <img class="auto-next" src="./pictures/2.png" alt="">
+                    </div>
+            
+                    <div class="circleThree">
+                        <img class="hand " src="./pictures/bext/hand.svg" alt="">
+                        <img class="heart" src="./pictures/bext/heart1.svg" alt="">
+                    </div>
+            
+                    <div class="circleFour">
+                        <img class="idea" src="./pictures/idea.png" alt="">
+                        <img class="idea-light" src="./pictures/idea-light.svg" alt="">
+                    </div>
+            
+                    <div class="circleFive">
+                        <img class="yinYang fa-spin" src="./pictures/bext/chinese.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
+        
     </div>
     
 
