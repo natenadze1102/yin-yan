@@ -46,7 +46,7 @@ nav {
   width: 100%;
   object-fit: cover;
   @media only screen and (max-width:748px) {
-    /*   display: none; */
+    
   }
 }
 
@@ -162,7 +162,10 @@ nav {
                 font-size: 330%;
 
                 @media only screen and (max-width:748px) {
-                    font-size: 230%;
+                    font-size: 180%;
+                }
+                @media only screen and (max-width:468px) {
+                    font-size: 130%;
                 }
             }
         }
@@ -502,8 +505,9 @@ nav {
     10%  { transform: scale(0)   translateY(0);  }
     30%  {}
     50%  { transform: scale(1.05,.95) translateY(-600px); }
-    57%  { transform: scale(1,1)      translateY(0); }
-    64%  { transform: scale(1,1)      translateY(0); }
+    57%  { transform: scale(1,1)      translateY(0);}
+    64%  { transform: scale(1,1)      translateY(0); background-color: #ffffff;}
+    84%  {background-color: hsl(357, 98%, 68%); }
     100% { transform: scale(1,1)      translateY(0) rotate(360deg); }
 }
 @keyframes appearFirst {
@@ -511,7 +515,7 @@ nav {
         transform: scale(0);
     }
     80% {
-        left: -100rem;   
+        left: -50%;  
     }
 }
 @keyframes appearSecond {
@@ -519,7 +523,7 @@ nav {
         transform: scale(0);
     }
     80% {
-        top: -100rem;   
+        top: -50%;   
     }
 }
 
@@ -528,7 +532,7 @@ nav {
         transform: scale(0);
     }
     80% {
-        right: -100rem;   
+        right: -50%;  
     }
 }
 
@@ -537,6 +541,26 @@ nav {
         transform: scale(0);
     }
     80% {
-        bottom: -100rem;   
+        bottom: -50%; 
+    }
+}
+.clickBtn {
+    font-size: 1.8rem;
+    border: none;
+    margin: 1rem;
+    border-radius: 10px;
+    padding:.3rem .5rem;
+    background:linear-gradient(to right top, #d17cac, #ab8acd, #7199db, #2aa4d2, #00a9b7, #20b0b0, #3bb6a8, #54bc9f, #57ccb2, #59dbc6, #5cebdb, #5ffbf1);
+    transition: .3s;
+    &:focus,
+    &:active {
+        outline:none;
+       
+    }
+    color:rgba(255, 255, 255, 0.692);
+    &:hover {
+        color:white;
+        transform:translateY(.5rem)
+
     }
 }
