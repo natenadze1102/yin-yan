@@ -45,18 +45,32 @@ nav {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  @media only screen and (max-width:748px) {
-    
-  }
 }
-
+.row {
+    padding-top: 15%;
+    @media only screen and (max-width:768px) {
+        padding-top: 35%;
+    }
+    @media only screen and (max-width:468px) {
+        padding-top: 40%;
+    }
+    @media only screen and (max-width:568px) {
+        padding-top: 45%;
+    }
+    @media only screen and (max-width:450px) {
+        padding-top: 50%;
+    }
+    @media only screen and (max-width:320px) {
+        padding-top: 55%;
+    }
+}
 .big-circle {
     background-color: #fff;
-    position: fixed;
+  /*   position: fixed;
     left:40%;
-    top:20%!important;
-    height: 40rem;
-    width: 40rem;
+    top:20%!important; */
+    height: 35rem;
+    width: 35rem;
     border-radius: 100%;
     border:3px solid rgba(0, 0, 255, 0.245);
     box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.85);
@@ -65,41 +79,37 @@ nav {
     animation-duration: 2s;
     max-width:100%!important;
 
-    @media only screen and (max-width:1500px) {
-        left:33%;
+     @media only screen and (max-width:1500px) {
+        /* left:33%; */
     }
     @media only screen and (max-width:1200px) {
-        left:30%;
+        /* left:30%; */
     }
     @media screen and (max-width: 992px) {
-        width: 35rem;
-        height: 35rem;
+        /* width: 35rem;
+        height: 35rem; */
     }
     @media screen and (max-width: 768px) {
-        width: 30rem;
-        height: 30rem;
-        top:30%!important;
-        left:30%;
+       width:25rem;
+       height: 25rem;
     }
     @media screen and (max-width: 468px) {
-        width: 25rem;
-        height: 25rem;
-        top:30%!important;
-        left:21%;
+       width: 17rem;
+       height: 17rem;
     }
     @media screen and (max-width: 350px) {
-        width: 20rem;
+      /*   width: 20rem;
         height: 20rem;
         top:30%!important;
-        left:20%;
-    }
+        left:20%; */
+    } 
 
     .circleOne {
         position: absolute;
         left: -13%;
-        top:35%;
-        width:30%;
-        height:30%;
+        top:37%;
+        width:26%;
+        height:28%;
         border-radius: 50%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         transition: .2s ease-in-out;
@@ -111,9 +121,8 @@ nav {
         animation-iteration-count: 1;
         animation-delay: 1s;
         .oil {
+            position: absolute;
             height: 30%;
-            position: absolute;
-            position: absolute;
             top:40%;
             left:34%;
             border-radius: 25%;
@@ -138,10 +147,10 @@ nav {
 
     .circleTwo {
         position: absolute;
-        left:34%;
+        left:37%;
         top:-13%;
-        width:30%;
-        height:30%;
+        width:26%;
+        height:28%;
         border-radius: 50%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         transition: .2s ease-in-out;
@@ -159,14 +168,14 @@ nav {
             border-radius: 25%;
 
             i {
-                font-size: 330%;
-
-                @media only screen and (max-width:748px) {
-                    font-size: 180%;
+                font-size: 250%;
+                @media only screen and (max-width:768px) {
+                    font-size: 200%;
                 }
                 @media only screen and (max-width:468px) {
-                    font-size: 130%;
+                    font-size: 150%;
                 }
+              
             }
         }
     
@@ -208,9 +217,9 @@ nav {
     .circleThree {
         position: absolute;
         right: -13%;
-        top:35%;
-        width:30%;
-        height:30%;
+        top:37%;
+        width:26%;
+        height:28%;
         transition: .2s ease-in-out;
         border-radius: 50%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
@@ -261,10 +270,10 @@ nav {
 
     .circleFour {
         position: absolute;
-        left:34%;
+        left:37%;
         bottom:-13%;
-        width:30%;
-        height:30%;
+        width:26%;
+        height:28%;
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         border-radius: 50%;
         transition: .2s ease-in-out;
@@ -321,11 +330,11 @@ nav {
     }
 
     .circleFive {
-        position: absolute;
-        left:34%;
+        position: relative;
+        left:37%;
         top:35%;
-        width:30%;
-        height:30%;
+        width:25%;
+        height:25%;
         background-image: linear-gradient(to right top, #d17cac, #ab8acd, #7199db, #2aa4d2, #00a9b7, #20b0b0, #3bb6a8, #54bc9f, #57ccb2, #59dbc6, #5cebdb, #5ffbf1);
         box-shadow: 2px 2px 23px 0px rgba(0,0,0,0.75);
         border-radius: 50%;
@@ -445,10 +454,6 @@ nav {
         opacity: 1;
     }
 
-    70% {
-        
-    }
-
     100% {
         opacity: 0;
     }
@@ -457,10 +462,6 @@ nav {
 
 @keyframes travel {
     
-    0% {
-      /*   top:0%;
-        left:0%; */
-    }
     50% {
         transform: rotateY(180deg); 
         left:10%;
@@ -481,16 +482,8 @@ nav {
         
     }
 
-    25% {
-       
-    }
-
-   50% {
-    
-   }
-
    60% {
-    opacity: 0;
+        opacity: 0;
    }
 
     100% {
@@ -542,7 +535,7 @@ nav {
         transform: scale(0);
     }
     80% {
-        bottom: -50%; 
+        bottom: -30%; 
     }
 }
 .clickBtn {

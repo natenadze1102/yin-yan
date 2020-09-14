@@ -58,13 +58,47 @@ nav a {
      object-fit: cover;
 }
 
+.row {
+  padding-top: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    padding-top: 35%;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .row {
+    padding-top: 40%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .row {
+    padding-top: 45%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .row {
+    padding-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .row {
+    padding-top: 55%;
+  }
+}
+
 .big-circle {
   background-color: #fff;
-  position: fixed;
-  left: 40%;
-  top: 20% !important;
-  height: 40rem;
-  width: 40rem;
+  /*   position: fixed;
+    left:40%;
+    top:20%!important; */
+  height: 35rem;
+  width: 35rem;
   border-radius: 100%;
   border: 3px solid rgba(0, 0, 255, 0.245);
   -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.85);
@@ -80,56 +114,52 @@ nav a {
 
 @media only screen and (max-width: 1500px) {
   .big-circle {
-    left: 33%;
+    /* left:33%; */
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .big-circle {
-    left: 30%;
+    /* left:30%; */
   }
 }
 
 @media screen and (max-width: 992px) {
   .big-circle {
-    width: 35rem;
-    height: 35rem;
+    /* width: 35rem;
+        height: 35rem; */
   }
 }
 
 @media screen and (max-width: 768px) {
   .big-circle {
-    width: 30rem;
-    height: 30rem;
-    top: 30% !important;
-    left: 30%;
+    width: 25rem;
+    height: 25rem;
   }
 }
 
 @media screen and (max-width: 468px) {
   .big-circle {
-    width: 25rem;
-    height: 25rem;
-    top: 30% !important;
-    left: 21%;
+    width: 17rem;
+    height: 17rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .big-circle {
-    width: 20rem;
-    height: 20rem;
-    top: 30% !important;
-    left: 20%;
+    /*   width: 20rem;
+        height: 20rem;
+        top:30%!important;
+        left:20%; */
   }
 }
 
 .big-circle .circleOne {
   position: absolute;
   left: -13%;
-  top: 35%;
-  width: 30%;
-  height: 30%;
+  top: 37%;
+  width: 26%;
+  height: 28%;
   border-radius: 50%;
   -webkit-box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
@@ -151,9 +181,8 @@ nav a {
 }
 
 .big-circle .circleOne .oil {
+  position: absolute;
   height: 30%;
-  position: absolute;
-  position: absolute;
   top: 40%;
   left: 34%;
   border-radius: 25%;
@@ -183,10 +212,10 @@ nav a {
 
 .big-circle .circleTwo {
   position: absolute;
-  left: 34%;
+  left: 37%;
   top: -13%;
-  width: 30%;
-  height: 30%;
+  width: 26%;
+  height: 28%;
   border-radius: 50%;
   -webkit-box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
@@ -215,18 +244,18 @@ nav a {
 }
 
 .big-circle .circleTwo .oil i {
-  font-size: 330%;
+  font-size: 250%;
 }
 
-@media only screen and (max-width: 748px) {
+@media only screen and (max-width: 768px) {
   .big-circle .circleTwo .oil i {
-    font-size: 180%;
+    font-size: 200%;
   }
 }
 
 @media only screen and (max-width: 468px) {
   .big-circle .circleTwo .oil i {
-    font-size: 130%;
+    font-size: 150%;
   }
 }
 
@@ -278,9 +307,9 @@ nav a {
 .big-circle .circleThree {
   position: absolute;
   right: -13%;
-  top: 35%;
-  width: 30%;
-  height: 30%;
+  top: 37%;
+  width: 26%;
+  height: 28%;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   border-radius: 50%;
@@ -354,10 +383,10 @@ nav a {
 
 .big-circle .circleFour {
   position: absolute;
-  left: 34%;
+  left: 37%;
   bottom: -13%;
-  width: 30%;
-  height: 30%;
+  width: 26%;
+  height: 28%;
   -webkit-box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
@@ -429,11 +458,11 @@ nav a {
 }
 
 .big-circle .circleFive {
-  position: absolute;
-  left: 34%;
+  position: relative;
+  left: 37%;
   top: 35%;
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#d17cac), color-stop(#ab8acd), color-stop(#7199db), color-stop(#2aa4d2), color-stop(#00a9b7), color-stop(#20b0b0), color-stop(#3bb6a8), color-stop(#54bc9f), color-stop(#57ccb2), color-stop(#59dbc6), color-stop(#5cebdb), to(#5ffbf1));
   background-image: linear-gradient(to right top, #d17cac, #ab8acd, #7199db, #2aa4d2, #00a9b7, #20b0b0, #3bb6a8, #54bc9f, #57ccb2, #59dbc6, #5cebdb, #5ffbf1);
   -webkit-box-shadow: 2px 2px 23px 0px rgba(0, 0, 0, 0.75);
@@ -626,8 +655,6 @@ nav a {
   30% {
     opacity: 1;
   }
-  70% {
-  }
   100% {
     opacity: 0;
   }
@@ -640,18 +667,12 @@ nav a {
   30% {
     opacity: 1;
   }
-  70% {
-  }
   100% {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes travel {
-  0% {
-    /*   top:0%;
-        left:0%; */
-  }
   50% {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
@@ -666,10 +687,6 @@ nav a {
 }
 
 @keyframes travel {
-  0% {
-    /*   top:0%;
-        left:0%; */
-  }
   50% {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
@@ -688,10 +705,6 @@ nav a {
     left: 150%;
     opacity: 0;
   }
-  25% {
-  }
-  50% {
-  }
   60% {
     opacity: 0;
   }
@@ -707,10 +720,6 @@ nav a {
   0% {
     left: 150%;
     opacity: 0;
-  }
-  25% {
-  }
-  50% {
   }
   60% {
     opacity: 0;
@@ -851,7 +860,7 @@ nav a {
             transform: scale(0);
   }
   80% {
-    bottom: -50%;
+    bottom: -30%;
   }
 }
 
@@ -861,7 +870,7 @@ nav a {
             transform: scale(0);
   }
   80% {
-    bottom: -50%;
+    bottom: -30%;
   }
 }
 
