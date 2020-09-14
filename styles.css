@@ -871,8 +871,7 @@ nav a {
   margin: 1rem;
   border-radius: 10px;
   padding: .3rem .5rem;
-  background: -webkit-gradient(linear, left bottom, right top, from(#d17cac), color-stop(#ab8acd), color-stop(#7199db), color-stop(#2aa4d2), color-stop(#00a9b7), color-stop(#20b0b0), color-stop(#3bb6a8), color-stop(#54bc9f), color-stop(#57ccb2), color-stop(#59dbc6), color-stop(#5cebdb), to(#5ffbf1));
-  background: linear-gradient(to right top, #d17cac, #ab8acd, #7199db, #2aa4d2, #00a9b7, #20b0b0, #3bb6a8, #54bc9f, #57ccb2, #59dbc6, #5cebdb, #5ffbf1);
+  background: #312366;
   -webkit-transition: .3s;
   transition: .3s;
   color: rgba(255, 255, 255, 0.692);
